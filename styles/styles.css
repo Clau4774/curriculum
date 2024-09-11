@@ -7,6 +7,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    background: linear-gradient(45deg, #fff, #ccc);
+}
+
 img {
     width: 100%;
 }
@@ -20,7 +24,7 @@ h2 {
     font-size: 1.45em;
 }
 
-h3 {
+h3, h4, p, ul {
     margin-bottom: 1em;
 }
 
@@ -34,6 +38,11 @@ ul{
 
 .drop-shadow {
     filter: drop-shadow(5px 5px #000)
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 15px 5px #000;
+    border-radius: 5px;
 }
 
 .underline{
@@ -68,7 +77,6 @@ ul{
 .objective-container {
     width: 90vw;
     align-self: center;
-    border: 1px solid #000;
     padding: 15px; 
     margin-bottom: 1em;
 }
@@ -76,9 +84,10 @@ ul{
 /*Main Area*/
 
 #main-container {
+    max-width: 1600px;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -95,25 +104,20 @@ ul{
 
 .skills-container  li {
     width: 150px;
-    
-    border: 1px solid #444;
-}
-
-h4, p, ul {
-    margin-bottom: 1em;
 }
 
 /*Contact List*/
 
 .contact-list {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: space-between;
+    max-width: 1024px;
+    margin:auto auto;
 }
 
 .contact-list li img {
     width: 100px;
-    align-items: center;
+    
 }
 
 .print {
